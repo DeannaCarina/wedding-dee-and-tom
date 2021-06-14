@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f73762c6c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <title>Deanna & Thomas 22nd April 2022</title>
+</head>
+<body>
+    <header id="banner">
+        <div id="banner-cover">
+            <span id="small-cover">We're getting married!</span><br>
+            <span id="large-cover">Deanna & Thomas</span><br>
+            <span id="small-cover">20th April 2022</span>
+        </div>
+        <div class="timer-container">
+            <div id="countdown">
+                <span id="days"></span> 
+                <span id="days-word">days</span>
+            </div>
+        </div>
+        <div id="top-banner">
+            Welcome to out wedding website!
+        </div>
+    </header>
+    <div id="content-banner">
+        <nav>
+            <span class="nav-button">Welcome</span>
+            <span class="nav-button">Order of the day</span>
+            <span class="nav-button">Accommodation at the venue</span>
+            <span class="nav-button">Alternative accommodation</span>
+            <span class="nav-button">Confirm Attendance</span>
+            <span class="nav-button">Contact Us</span>
+            <span class="nav-button">Questionnaires</span>
+            <span class="nav-button">Wedding Blog</span>
+            <span class="nav-button">Photos</span>
+            <span class="nav-button">Covid-19</span>
+            <span class="nav-button">Upcoming events</span>
+        </nav>
+    </div>
+    
+</body>
+</html>
+<script>
+(function () {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+  
+    let birthday = "Apr 20, 2022 14:00:00",
+        countDown = new Date(birthday).getTime(),
+        x = setInterval(function() {    
+  
+          let now = new Date().getTime(),
+              distance = countDown - now;
+  
+          document.getElementById("days").innerText = Math.floor(distance / (day));
+  
+          //do something later when date is reached
+          if (distance < 0) {
+            let headline = document.getElementById("headline"),
+                countdown = document.getElementById("countdown"),
+                content = document.getElementById("content");
+  
+            headline.innerText = "We're Married!";
+            countdown.style.display = "none";
+            content.style.display = "block";
+  
+            clearInterval(x);
+          }
+          //seconds
+        }, 0)
+    }());
+</script>
