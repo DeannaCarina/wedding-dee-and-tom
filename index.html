@@ -27,51 +27,49 @@
     </header>
     <div id="content-banner">
         <nav>
-            <span class="nav-button">Welcome</span>
-            <span class="nav-button">Order of the day</span>
-            <span class="nav-button">Accommodation at the venue</span>
-            <span class="nav-button">Alternative accommodation</span>
-            <span class="nav-button">Confirm Attendance</span>
-            <span class="nav-button">Contact Us</span>
-            <span class="nav-button">Questionnaires</span>
-            <span class="nav-button">Wedding Blog</span>
-            <span class="nav-button">Photos</span>
-            <span class="nav-button">Covid-19</span>
-            <span class="nav-button">Upcoming events</span>
+            <a href="index.html"><span class="nav-button">Welcome</span></a>
+            <a href="order.html"><span class="nav-button">Order of the day</span></a>
+            <a href="accommodation.html"><span class="nav-button">Accommodation</span></a>
+            <a href="attendance.html"><span class="nav-button">Confirm Attendance</span></a>
+            <a href="contact.html"><span class="nav-button">Contact Us</span></a>
+            <a href="questionnaires.html"><span class="nav-button">Questionnaires</span></a>
+            <a href="blog.html"><span class="nav-button">Wedding Blog</span></a>
+            <a href="photos.html"><span class="nav-button">Photos</span></a>
+            <a href="covid.html"><span class="nav-button">Covid-19</span></a>
         </nav>
     </div>
-    
+    <div id="welcome-text">
+        <h1>Welcome to our wedding...</h1><br>
+        <img src="assets/deeandtom.png" alt="picture of dee and tom with the dogs" id="deeandtom"><br><br>
+        We are getting married!<br><br>
+
+        In your invitation pack, you would have found this website as a way to confirm your attendance - if this is what you would like to do, please 
+        follow the 'confirm attendance' link at the top of this page.<br><br>
+
+        As we wait for our big day to arrive, we have made this website as a way for us to keep you up-to-date on everything, share timings with you (see 'order 
+        of the day') and to share our story with you (see 'wedding blog'). If you need to speak to us for any reason at all with regards to our big day, please 
+        either message us in the usual ways (WhatsApp, Facebook, Text etc.) or use the 'contact us' link at the top of this page - this will go straight through 
+        to our personal emails.<br><br>
+
+        Enjoy the site, and see you soon, lots of love!<br><br>
+
+        Dee and Tom<br><br>
+
+        x x x<br><br>
+
+        P.S The dogs will be at our wedding ceremony - if you are allergic, please take precautionary measures, if you are scared of dogs, please let us know in 
+        advance so we can ensure you have a seat away from the aisle - this is the best we can do as we will not be omitting them from the ceremony. They won't be 
+        there at the evening reception as there will be too much going on, too much noise for them and too many distractions for them to be good boys.<br><br>
+
+
+        P.PS (well done for getting this far) our Instagram hashtag is #DeeTom2022 please upload your pictures to instagram and use the hashtag so we can see all your 
+        pictures from the day 
+    </div>
+    <footer id="footer-banner">
+        <span id="footer-names">Deanna & Thomas</span>
+        <span id="footer-date">20th April 2021</span> 
+        <span id="footer-made">&copy Made with love, <a href="https://DeannaCarina.com" target="_blank">DeannaCarina</a></span>
+    </footer>  
+<script src="assets/js/script.js"></script> 
 </body>
 </html>
-<script>
-(function () {
-    const second = 1000,
-          minute = second * 60,
-          hour = minute * 60,
-          day = hour * 24;
-  
-    let birthday = "Apr 20, 2022 14:00:00",
-        countDown = new Date(birthday).getTime(),
-        x = setInterval(function() {    
-  
-          let now = new Date().getTime(),
-              distance = countDown - now;
-  
-          document.getElementById("days").innerText = Math.floor(distance / (day));
-  
-          //do something later when date is reached
-          if (distance < 0) {
-            let headline = document.getElementById("headline"),
-                countdown = document.getElementById("countdown"),
-                content = document.getElementById("content");
-  
-            headline.innerText = "We're Married!";
-            countdown.style.display = "none";
-            content.style.display = "block";
-  
-            clearInterval(x);
-          }
-          //seconds
-        }, 0)
-    }());
-</script>
