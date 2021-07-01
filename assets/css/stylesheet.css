@@ -169,3 +169,40 @@ th{
     width: 200px;
     border: 1px solid black;
 }
+#confirm-form{
+    border-style: double;
+    border-radius: 30px;
+    border-color: black;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+#makeit-message{
+    width: 900px;
+    height: 200px;
+    font-size: large;
+}
+.labels, .form-text{
+    width: 300px;
+    display: inline-block;
+    height: 40px;
+    font-size: large;
+    text-align: center;
+}
+#makeit-yes, #makeit-no{
+    width: 30px;
+    height: 30px;
+}
+#space{
+    width: 100px;
+    display: inline-block;
+}
+#confirm-form-button{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(106, 134, 143, 0.774);
+    color: white;
+}
+#confirm-form-button:hover{
+    color: rgba(106, 134, 143, 0.774);
+    background-color: white;
+}
