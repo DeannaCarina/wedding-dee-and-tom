@@ -85,7 +85,7 @@ h1, h2, h3, h4{
     margin: 10px;
     padding: 5px;
 }
-.nav-button:hover{
+.nav-button:hover, .active{
     color: rgb(75, 120, 133);
     background-color: white;
 }
@@ -148,11 +148,11 @@ h1, h2, h3, h4{
     padding-right: 20%;
     padding-left: 20%;
 }
-#order-priest{
+#order-priest, #stirk{
     width: 700px;
     border-radius: 30px;
 }
-#bus-image, #eagle-image{
+#bus-image, #eagle-image, #inside-stirk{
     width: 500px;
     border-radius: 30px;
 }
