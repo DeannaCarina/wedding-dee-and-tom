@@ -41,7 +41,7 @@
     <h1 class="page-heading">Confirm Attendance</h1>
     <div class="main-container">
         <div>
-            <form id="confirm-form" action="submit-attendance-form.php" method="post">
+            <form id="confirm-form" action="attend_form.php" method="post">
                 <h3>Your details:</h3><br>
                 <input type="text" id="fname" name="first_name" class="form-text" required>
                 <input type="text" id="lname" name="last_name" class="form-text" required>
@@ -50,9 +50,9 @@
                 <label for="lname" class="labels">Last Name</label>
                 <label for="email" class="labels">Email Address</label>
             <h3 class="form-white-text">Can you make it?</h3>
-                <input type="radio" id="makeit-yes" name="makeit" required>
+                <input type="radio" id="makeit-yes" name="makeit" value="Yes I can make it" required>
                 <label for="makeit-yes"><strong>Yes</strong></label><span id="space"></span>
-                <input type="radio" id="makeit-no" name="makeit">
+                <input type="radio" id="makeit-no" name="makeit" value="No I can't make it">
                 <label for="makeit-no"><strong>No</strong></label><br><br><br>
                 <label for="makeit-message" class="form-text"><strong>Write a message for us:</strong><br>Is there anyone else in your 
                     party you'd like to RSVP for?</label><br><br>
