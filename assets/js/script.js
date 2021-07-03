@@ -32,31 +32,40 @@
 
 
 
-    var slidePosition = 1;
-SlideShow(slidePosition);
-
-// forward/Back controls
-function plusSlides(n) {
-  SlideShow(slidePosition += n);
-}
-
-//  images controls
-function currentSlide(n) {
-  SlideShow(slidePosition = n);
-}
-
-function SlideShow(n) {
-  var i;
-  var slides = document.getElementsByClassName("Containers");
-  var circles = document.getElementsByClassName("dots");
-  if (n > slides.length) {slidePosition = 1}
-  if (n < 1) {slidePosition = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < circles.length; i++) {
-      circles[i].className = circles[i].className.replace(" enable", "");
-  }
-  slides[slidePosition-1].style.display = "block";
-  circles[slidePosition-1].className += " enable";
-} 
+// for slideshow in venues section
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+// for slideshow in almost there section
+    var slideIndex1 = 1;
+    showDivs1(slideIndex1);
+    
+    function plusDivs1(n) {
+      showDivs1(slideIndex1 += n);
+    }
+    
+    function showDivs1(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides1");
+      if (n > x.length) {slideIndex1 = 1}
+      if (n < 1) {slideIndex1 = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex1-1].style.display = "block";
+    }
+    
