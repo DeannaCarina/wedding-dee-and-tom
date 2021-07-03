@@ -191,7 +191,7 @@ h1, h2, h3, h4{
     color: rgb(106, 134, 143);
     background-color: white;
 }
-#footer-name{
+#footer-names{
     width: 10%;
     margin: 10px;
     padding: 10px;
@@ -418,6 +418,23 @@ th{
         margin-top: 40px;
     }
 }
+@media screen and (max-width: 625px){
+    #footer-banner{
+        font-size: small;
+    }
+    #footer-names{
+        width: auto;
+        margin: 2px;
+    }
+    #footer-date{
+        width: auto;
+        margin: 2px;
+    }
+    #footer-made{
+        width: auto;
+        margin: 2px;
+    }
+}
 @media screen and (max-width: 600px){
     #confirm-form{
         width: 100%;
@@ -436,9 +453,6 @@ th{
     }
 }
 @media screen and (max-width: 550px){
-    #footer-banner{
-        font-size: small;
-    }
     #welcome-text{
         font-size: medium;
         padding: 35px;
@@ -495,6 +509,20 @@ th{
         margin-left: 50px;
     }
 }
+@media screen and (max-width: 435px){
+    #footer-banner{
+        font-size: x-small;
+    }
+    #footer-names{
+        padding: 0px;
+    }
+    #footer-date{
+        padding: 0px;
+    }
+    #footer-made{
+        padding: 0px;
+    }
+}
 @media screen and (max-width: 360px){
     #footer-banner{
         font-size: x-small;
@@ -509,5 +537,10 @@ th{
         padding: 35px;
         margin: auto;
         width: 70%;
+    }
+}
+@media screen and (max-width: 310px){
+    #footer-banner{
+        font-size: xx-small;
     }
 }
