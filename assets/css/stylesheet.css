@@ -441,6 +441,12 @@ th{
     }
     #welcome-text{
         font-size: medium;
+        padding: 35px;
+        margin: 0px;
+        width: 85%;
+    }
+    #deeandtom{
+        width: 70%;
     }
     .index-heading{
         font-size: x-large;
@@ -460,6 +466,14 @@ th{
         margin-top: 5px;
         margin-bottom: 5px;
         border-radius: 15px;
+    }
+}
+@media screen and (max-width: 461px){
+    #welcome-text{
+        font-size: medium;
+        padding: 35px;
+        margin: auto;
+        width: 75%;
     }
 }
 @media screen and (max-width: 450px){
@@ -489,5 +503,11 @@ th{
 @media screen and (max-width: 320px){
     #top-banner{
         font-size: small;
+    }
+    #welcome-text{
+        font-size: medium;
+        padding: 35px;
+        margin: auto;
+        width: 70%;
     }
 }
