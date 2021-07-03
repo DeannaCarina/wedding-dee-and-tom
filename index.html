@@ -18,11 +18,30 @@
         </div>
         <div class="timer-container">
             <div id="countdown">
-                <span id="days"></span> 
+                <span id="days"></span> <br>
                 <span id="days-word">days</span>
             </div>
         </div>
         <div id="top-banner">
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                  <span class="sr-only">Close main menu</span>
+                  <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                  <li><a href="index.html" class="list-active">Welcome</a></li>
+                  <li><a href="order.html">Order of the Day</a></li>
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="attendance.html">Get in Touch</a></li>
+                  <li><a href="blog.html">Wedding Blog</a></li>
+                  <li><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden>
+            </a>
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
             Welcome to our wedding website!
         </div>
     </header>
@@ -37,7 +56,7 @@
         </nav>
     </div>
     <div id="welcome-text">
-        <h1>Welcome to our wedding...</h1><br>
+        <h1 class="index-heading">Welcome to our wedding...</h1><br>
         <img src="assets/deeandtom.png" alt="picture of dee and tom with the dogs" id="deeandtom"><br><br>
         We are getting married!<br><br>
 

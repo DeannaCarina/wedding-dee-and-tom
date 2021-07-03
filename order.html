@@ -18,11 +18,30 @@
         </div>
         <div class="timer-container">
             <div id="countdown">
-                <span id="days"></span> 
+                <span id="days"></span> <br>
                 <span id="days-word">days</span>
             </div>
         </div>
         <div id="top-banner">
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                  <span class="sr-only">Close main menu</span>
+                  <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                  <li><a href="index.html">Welcome</a></li>
+                  <li><a href="order.html" class="list-active">Order of the Day</a></li>
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="attendance.html">Get in Touch</a></li>
+                  <li><a href="blog.html">Wedding Blog</a></li>
+                  <li><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden>
+            </a>
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
             Welcome to our wedding website!
         </div>
     </header>
@@ -132,7 +151,7 @@
         </div>
         <div>
             <h2>Before you head home...</h2>
-            <img src="assets/guest-book.png" alt="Image of the hand made guest book">
+            <img src="assets/guest-book.png" alt="Image of the hand made guest book" id="guestbook-image">
             <p>At some point during the evening if you could sign our guest book that we have at the venue, that would be amazing.<br><br>
 
                 There will be a wooden circle for you to write on (it will be at the table you are sat on) and drop into the frame. P.S. Tom has hand made this!</p>

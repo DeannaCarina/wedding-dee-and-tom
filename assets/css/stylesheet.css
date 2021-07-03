@@ -69,6 +69,75 @@ h1, h2, h3, h4{
     line-height: 70px;
     font-size: 120%;
 }
+.menu-toggle {
+    padding: 15px;
+    display: none;
+    }
+.main-menu {
+    position: absolute;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 240px;
+    transition: left 0.3s ease,
+          box-shadow 0.3s ease;
+    z-index: 999;
+    
+    }
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    height: 400px;
+    width: 200px;
+    background: #1a1a1a;
+    }
+.main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+    }
+.small-link{
+    font-size: 0.7em;
+}    
+.main-menu li:first-child a {
+    border-top: 1px solid #383838;
+    }
+.main-menu a:hover, .main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+    }
+.main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+/* Inside the pop-out menu --------------------------------- */
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  display: block;
+  left: 0;
+  outline: none;
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+.list-active{
+    background-color: rgb(106, 134, 143);
+}
 #content-banner{
     height: 70px;
     background-color: rgb(106, 134, 143);
@@ -228,4 +297,130 @@ th{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
+}
+@media screen and (max-height: 760px){
+    #banner{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1170px){
+    #stirk{
+        width: 100%;
+        height: auto;
+    }
+    #order-priest{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1000px){
+    #banner-cover{
+        width: 230px;
+        height: 120px;
+    }
+    #small-cover{
+        font-size: small;
+    }
+    #large-cover{
+        font-size: x-large;
+    }
+    .timer-container{
+        width: 120px;
+        height: 60px;
+        padding: 0px;
+        padding-top: 20px;
+        line-height: 15px;
+    }
+    #days{
+        font-size: x-large;
+    }
+    #days-word{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 850px){
+    .main-menu{
+        display: unset;
+    }
+    .menu-toggle{
+        display: inline-block;
+        color: white;
+    }
+    #top-banner{
+        line-height: 40px;
+        position: fixed;
+        z-index: 999;
+    }
+    #content-banner{
+        display: none;
+    }
+    #banner{
+        border-bottom: 20px solid rgb(106, 134, 143);
+    }
+    #bus-image{
+        width: 100%;
+        height: auto;
+    }
+    #inside-stirk{
+        width: 100%;
+        height: auto;
+    }
+    #guestbook-image{
+        width: 100%;
+        height: auto;
+    }
+    #deeandtom{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 749px){
+    .timer-container{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 550px){
+    #footer-banner{
+        font-size: small;
+    }
+    #welcome-text{
+        font-size: medium;
+    }
+    .index-heading{
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 500px){
+    .page-heading{
+        font-size: 200%;
+    }
+}
+@media screen and (max-width: 450px){
+    .main-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #top-banner{
+        font-size: medium;
+    }
+    .timer-container{
+        margin: auto;
+        margin-top: 50px;
+        margin-right: 55px;
+    }
+    #banner-cover{
+        margin: auto;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 360px){
+    #footer-banner{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 320px){
+    #top-banner{
+        font-size: small;
+    }
 }
