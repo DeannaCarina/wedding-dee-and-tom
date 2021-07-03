@@ -216,4 +216,16 @@ th{
 #bus-table{
     display: none;
 }
-
+#photos-container{
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 20px;
+    padding: 20px;
+}
+#photos-container > img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
