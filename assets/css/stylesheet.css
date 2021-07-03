@@ -238,49 +238,22 @@ th{
     width: 200px;
     border: 1px solid black;
 }
-#confirm-form{
-    border-style: double;
-    border-radius: 30px;
-    border-color: black;
-    padding: 20px;
-    background-color: whitesmoke;
-}
-#makeit-message{
-    width: 900px;
-    height: 200px;
-    font-size: large;
-}
-.labels, .form-text{
-    width: 300px;
-    display: inline-block;
-    height: 40px;
-    font-size: large;
-    text-align: center;
-}
-#makeit-yes, #makeit-no{
-    width: 30px;
-    height: 30px;
-}
-#space{
-    width: 100px;
-    display: inline-block;
-}
-#confirm-form-button{
-    width: 200px;
-    height: 50px;
-    background-color: rgba(106, 134, 143, 0.774);
-    color: white;
-}
-#confirm-form-button:hover{
-    color: rgba(106, 134, 143, 0.774);
-    background-color: white;
-}
-.contact-container{
-    width: 100%;
-}
 .blog-image{
     border-radius: 30px;
     width: 50%;
+}
+#carousel-container{
+    width: 100%;
+    margin: auto;
+}
+.mySlides{
+    height: auto;
+    width: auto;
+}
+.mySlides1{
+    height: auto; 
+    width: 100%;
+    margin: auto 0;
 }
 #bus-table{
     display: none;
@@ -303,12 +276,63 @@ th{
         height: 600px;
     }
 }
+@media screen and (max-width: 1676px){
+    #confirm-form{
+        width: 32%;
+    }
+    #contact-form{
+        width: 32%;
+    }
+    #help-form{
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1675px){
+    iframe{
+        width: 100%;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1530px){
+    #carousel-container{
+        width: 100%;
+    }
+    .mySlides{
+        height: 600px; 
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1200px){
+    #confirm-form{
+        width: 600px;
+        height: 1000px;
+        margin: auto;
+    }
+    #contact-form{
+        width: 600px;
+        height: 850px;
+        margin: auto;
+    }
+    #help-form{
+        width: 600px;
+        height: 1300px;
+        margin: auto;
+    }
+    .contact-container{
+        margin: auto;
+        width: 602px;
+    }
+}
 @media screen and (max-width: 1170px){
     #stirk{
         width: 100%;
         height: auto;
     }
     #order-priest{
+        width: 100%;
+        height: auto;
+    }
+    #stirkprices{
         width: 100%;
         height: auto;
     }
@@ -373,10 +397,42 @@ th{
         width: 100%;
         height: auto;
     }
+    #eagle-image{
+        width: 100%;
+        height: auto;
+    }
+    #photos-container{
+        column-count: 3;
+        column-gap: 15px;
+        padding: 15px;
+    }
+    #photos-container > img {
+        width: 100%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 15px;
+    }
 }
 @media screen and (max-width: 749px){
     .timer-container{
         margin-top: 40px;
+    }
+}
+@media screen and (max-width: 600px){
+    #confirm-form{
+        width: 100%;
+        height: 950px;
+    }
+    #contact-form{
+        width: 100%;
+        height: 850px;
+    }
+    #help-form{
+        width: 100%;
+        height: 1400px;
+    }
+    .contact-container{
+        width: 100%;
     }
 }
 @media screen and (max-width: 550px){
@@ -393,6 +449,17 @@ th{
 @media screen and (max-width: 500px){
     .page-heading{
         font-size: 200%;
+    }
+    #photos-container{
+        column-count: 2;
+        column-gap: 10px;
+        padding: 10px;
+    }
+    #photos-container > img {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 15px;
     }
 }
 @media screen and (max-width: 450px){
