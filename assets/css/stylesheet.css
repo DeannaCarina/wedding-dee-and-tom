@@ -244,16 +244,19 @@ th{
 }
 #carousel-container{
     width: 100%;
-    margin: auto;
+    margin: auto auto;
 }
 .mySlides{
-    height: auto;
+    height: 500px;
     width: auto;
+    margin: auto auto;
+    border-radius: 30px;
 }
 .mySlides1{
     height: auto; 
-    width: 100%;
-    margin: auto 0;
+    width: 70%;
+    margin: auto auto;
+    border-radius: 30px;
 }
 #bus-table{
     display: none;
@@ -291,15 +294,6 @@ th{
     iframe{
         width: 100%;
         height: 600px;
-    }
-}
-@media screen and (max-width: 1530px){
-    #carousel-container{
-        width: 100%;
-    }
-    .mySlides{
-        height: 600px; 
-        margin: auto;
     }
 }
 @media screen and (max-width: 1200px){
@@ -411,6 +405,10 @@ th{
         margin-top: 7px;
         margin-bottom: 7px;
         border-radius: 15px;
+    }
+    .mySlides{
+        height: 400px; 
+        margin: auto;
     }
 }
 @media screen and (max-width: 749px){
