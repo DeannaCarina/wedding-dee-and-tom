@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f73762c6c0.js" crossorigin="anonymous"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.png' /> 
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <title>Deanna & Thomas 20th April 2022</title>
+</head>
+<body>
+    <header id="banner">
+        <div id="banner-cover">
+            <span id="small-cover">We're getting married!</span><br>
+            <span id="large-cover">Deanna & Thomas</span><br>
+            <span id="small-cover">20th April 2022</span>
+        </div>
+        <div class="timer-container">
+            <div id="countdown">
+                <span id="days"></span> <br>
+                <span id="days-word">days</span>
+            </div>
+        </div>
+        <div id="top-banner">
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                  <span class="sr-only">Close main menu</span>
+                  <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                  <li><a href="index.html">Welcome</a></li>
+                  <li><a href="order.html">Order of the Day</a></li>
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="attendance.html">Get in Touch</a></li>
+                  <li><a href="blog.html">Wedding Blog</a></li>
+                  <li><a href="photos.html" class="list-active">Photos</a></li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden>
+            </a>
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
+            Welcome to our wedding website!
+        </div>
+    </header>
+    <div id="content-banner">
+        <nav>
+            <a href="index.html"><span class="nav-button">Welcome</span></a>
+            <a href="order.html"><span class="nav-button">Order of the day</span></a>
+            <a href="accommodation.html"><span class="nav-button">Accommodation</span></a>
+            <a href="attendance.html"><span class="nav-button">Get in Touch</span></a>
+            <a href="blog.html"><span class="nav-button">Wedding Blog</span></a>
+            <a href="photos.html"><span class="nav-button active">Photos</span></a>
+        </nav>
+    </div>
+    <h1 class="page-heading">Share your photos with us!</h1>
+    <div id="upload-form-container">
+        <form id="uploadForm" method="post" action="upload.php" enctype="multipart/form-data">
+            <label for="imageUpload">Upload your photo here:</label><br><br>
+            <input type="file" id="imageUpload" name="imageUpload" required><br><br>
+            <input type="submit" name="submit" value="Submit" id="imageUploadSubmit">    
+        </form>
+    </div>
+    <div id="uploadContainer">
+        
+    </div>
+    <footer id="footer-banner">
+        <span id="footer-names">Deanna & Thomas</span>
+        <span id="footer-date">20th April 2022</span> 
+        <span id="footer-made">Made with love, &copy DeannaCarina</span>
+    </footer>    
+    <script src="assets/js/script.js"></script> 
+</body>
+</html>

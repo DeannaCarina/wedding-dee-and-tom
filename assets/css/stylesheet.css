@@ -261,18 +261,37 @@ th{
 #bus-table{
     display: none;
 }
-#photos-container{
+#photos-container, #uploadContainer{
     clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 20px;
     padding: 20px;
 }
-#photos-container > img {
+#photos-container > img, #uploadContainer > img {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
+}
+#uploadForm{
+    border: 4px black double;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto auto;
+}
+#imageUploadSubmit{
+    background-color: rgb(106, 134, 143);
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+#imageUploadSubmit:hover{
+    color: rgb(106, 134, 143);
+    background-color: white;
 }
 @media screen and (max-height: 760px){
     #banner{
@@ -395,12 +414,12 @@ th{
         width: 100%;
         height: auto;
     }
-    #photos-container{
+    #photos-container, #uploadContainer{
         column-count: 3;
         column-gap: 15px;
         padding: 15px;
     }
-    #photos-container > img {
+    #photos-container > img, #uploadContainer > img {
         width: 100%;
         margin-top: 7px;
         margin-bottom: 7px;
@@ -468,12 +487,12 @@ th{
     .page-heading{
         font-size: 200%;
     }
-    #photos-container{
+    #photos-container, #uploadContainer{
         column-count: 2;
         column-gap: 10px;
         padding: 10px;
     }
-    #photos-container > img {
+    #photos-container > img, #uploadContainer > img {
         width: 100%;
         margin-top: 5px;
         margin-bottom: 5px;

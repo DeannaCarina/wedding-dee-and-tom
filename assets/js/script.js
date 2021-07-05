@@ -68,4 +68,9 @@
       }
       x[slideIndex1-1].style.display = "block";
     }
+    // for image upload
+
+    var upload = function(event){
+      
+    }
     
