@@ -259,7 +259,7 @@ th{
     border-radius: 30px;
 }
 #bus-table{
-    display: none;
+    font-size: 0.7rem;
 }
 #photos-container, #uploadContainer{
     clear: both;
