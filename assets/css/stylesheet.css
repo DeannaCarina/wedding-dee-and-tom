@@ -293,6 +293,18 @@ th{
     color: rgb(106, 134, 143);
     background-color: white;
 }
+
+.canape-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.canape-list {
+    text-align: left;
+    margin: auto 0;
+}
+
+
 @media screen and (max-height: 760px){
     #banner{
         height: 600px;
